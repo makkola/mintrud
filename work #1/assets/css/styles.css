@@ -795,6 +795,7 @@ welcome
 
 .welcome-area .header-text a:hover {
     text-decoration: underline;
+    color: #ff589e;
 }
 
 @media (max-width: 991px) {

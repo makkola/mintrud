@@ -152,6 +152,8 @@ body {
   letter-spacing: 0.25px;
   margin-bottom: 30px;
   position: relative;
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 20px;
 }
 
 .center-heading {
@@ -664,9 +666,6 @@ welcome
 .welcome-area {
   overflow: hidden;
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-image: url("/assets/images/magas.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -674,6 +673,7 @@ welcome
   -webkit-backdrop-filter: blur(5px) brightness(115%);
   backdrop-filter: blur(5px) brightness(115%);
   height: 100vh;}
+
   .welcome-area .overlay {
   position: absolute;
   top: 0;
@@ -682,7 +682,7 @@ welcome
   bottom: 0;
   content: '';
   opacity: .80;
-  background: #69b3e7;
+  background: #f7f7f7;
   /*background: -moz-linear-gradient(45deg, #ee76ad 0%, #efac78 100%);*/
   /*background: -webkit-linear-gradient(45deg, #ee76ad 0%, #efac78 100%);*/
   /*background: -o-linear-gradient(45deg, #ee76ad 0%, #efac78 100%);*/
@@ -691,32 +691,42 @@ welcome
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#448ef6', endColorstr='#af05a9', GradientType=1 ); }
 
 .welcome-area .header-text {
-  position: absolute;
-  top: 50%;
   transform: translateY(-55%);
-  text-align: center;
   width: 100%;
+  position: absolute;
+  align-items: center;
+  text-align: center;
+  top:50%;
 }
 
 .welcome-area .header-text h1 {
   font-weight: 500;
-  font-size: 48px;
-  font-family: "JetBrains Mono";
-  line-height: 54px;
-  letter-spacing: 1.4px;
+  font-size: 72px;
+  font-family: "Times New Roman";
+  line-height: 70px;
+  letter-spacing: 0.1em;
   margin-bottom: 30px;
-  color: #e5fff8
+  color: #000000;
+  text-shadow: 1px 1px 2px darkslategray;
 }
 
 .welcome-area .header-text p {
   font-weight: 400;
-  font-size: 15px;
-  color: #fff;
+  font-size: 1.6em;
+  font-family: 'Gilroy-Bold';
+  color: #005cbf;
+  text-shadow: 1px 1px 2px darkslategray;
   line-height: 28px;
-  letter-spacing: 0.25px;
-  margin-bottom: 40px;
-  position: relative;
+  letter-spacing: 0.10em;
+  margin: 80px 0 20px;
 }
+
+/*.welcome-area_background {*/
+/*  width: 50%;*/
+/*  z-index: 2;*/
+/*  color: #000000;*/
+/*  border-color: #337ab7;*/
+/*}*/
 
 @media (max-width: 991px) {
   .welcome-area .header-text {
@@ -734,7 +744,7 @@ welcome
   }
   .welcome-area .header-text p {
     text-align: center;
-    color: #fff;
+    color: #005cbf;
     margin-bottom: 20px;
   }
 }
@@ -744,11 +754,11 @@ welcome
     top: 65% !important;
     transform: perspective(1px) translateY(-60%) !important;
   }
+
    .welcome-area .header-text h1 {
-    font-size: 22px;
-    line-height: 30px;
     margin-bottom: 15px;
   }
+
   .welcome-area .header-text p {
     margin-bottom: 20px;
   }
@@ -767,20 +777,13 @@ welcome
     display: none;
   }
   .welcome-area .header-text h1 {
-    font-weight: 600;
-    font-size: 24px !important;
-    line-height: 30px !important;
     margin-bottom: 30px !important;
   }
-  .welcome-area .header-text h1 span {
-    color: #fff;
-  }
-  .welcome-area .header-text p {
-    text-align: center;
-    color: #fff;
-    font-size: 14px;
-    line-height: 22px;
-    margin-bottom: 40px;
+}
+
+@media (max-width: 565px) {
+  .welcome-area .header-text h1 {
+    font-size: 3em;
   }
 }
 
@@ -897,7 +900,7 @@ parallax & home seperator
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-color: rgba(255, 255, 159);, 1);
+  background-color: #fff;
   z-index: 2;
   top: -20%;
   left: -20%;
@@ -906,6 +909,10 @@ parallax & home seperator
 .mini .mini-content {
   position: relative;
   z-index: 3;
+}
+
+.mini-box {
+  color: #337ab7;
 }
 
 .mini .mini-content .info {
@@ -934,7 +941,7 @@ parallax & home seperator
   font-weight: 500;
   font-size: 36px;
   font-family: "JetBrains Mono";
-  letter-spacing: 0.25px;
+  letter-spacing: 0.25em;
   margin-bottom: 30px;
 }
 
@@ -955,7 +962,6 @@ parallax & home seperator
 .mini .mini-content .mini-box {
   display: block;
   height: 180px;
-  background: #fff;
   padding: 20px;
   border-radius: 20px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0) inset;
@@ -1005,53 +1011,60 @@ parallax & home seperator
   display: block;
   font-weight: 400;
   font-size: 18px;
-  font-family: "JetBrains Mono";
+  font-family: "Gilroy-Bold";
   letter-spacing: normal;
   margin-bottom: 5px;
   margin-top: 15px;
 }
 
+.education {
+  text-align: center;
+  padding-left: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 40%;
+}
+
+.education__span {
+  font-size: 1.2em;
+}
+
 .counter {
-  overflow: hidden;
   position: relative;
 }
 
 .counter:before {
   content: '';
   position: absolute;
-  width: 140%;
-  height: 140%;
+  width: 100%;
+  height: 100%;
   opacity: .90;
-  background-image: url(../images/fun-facts-bg.png);
+  background-image: url(../images/education.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   z-index: 2;
-  top: -20%;
-  left: -20%;
 }
 
 .counter .content {
   position: relative;
   z-index: 3;
   width: 100%;
+  padding: 5%;
 }
 
 .counter .content .count-item {
-  height: 340px;
   position: relative;
   float: left;
   width: 100%;
-}
-
-.counter .content .count-item.decoration-bottom {
-  position: relative;
+  margin: 0 0 20px;
 }
 
 .counter .content .count-item.decoration-bottom:after {
   content: '';
   position: absolute;
-  width: 70%;
+  max-width: 50%;
   height: 32px;
   top: 160px;
   left: 70%;
@@ -1064,20 +1077,6 @@ parallax & home seperator
 
 .counter .content .count-item.decoration-top {
   position: relative;
-}
-
-.counter .content .count-item.decoration-top:after {
-  content: '';
-  position: absolute;
-  width: 70%;
-  height: 32px;
-  top: 140px;
-  left: 70%;
-  background: url(../images/circle-dec.png) center center no-repeat;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
 }
 
 .counter .content .count-item:hover strong {
@@ -1104,9 +1103,40 @@ parallax & home seperator
   text-align: center;
   color: #fff;
   font-weight: 500;
-  font-size: 17px;
-  letter-spacing: 0.25px;
+  font-size: 1.5em;
+
 }
+
+@media (max-width: 1200px) {
+  .counter .content {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    padding: 2% 0;
+  }
+}
+
+@media (max-width: 872px) {
+  .counter .content {
+    position: relative;
+    z-index: 3;
+    background-size: auto;
+    width: 100%;
+    padding: 2% 0;
+  }
+
+  .counter:before {
+    background: rgb(2,2,9);
+    background: linear-gradient(115deg, rgba(2,2,9,1) 0%, rgba(45,46,179,1) 60%, rgba(86,117,237,1) 97%, rgba(91,127,238,1) 100%);
+  }
+
+  .education {
+    max-width: 100%;
+    padding: 0 10%;
+  }
+}
+
+
 
 @media (max-width: 991px) {
   .parallax {
@@ -1120,7 +1150,6 @@ parallax & home seperator
     transform: perspective(1px) translateY(0%) !important;
   }
   .counter {
-    padding-top: 60px;
     padding-bottom: 60px;
   }
   .counter .content {
@@ -1512,6 +1541,7 @@ footer .social li a {
   transition: all 0.3s ease 0s;
   color: #c8cbcf;
   font-style: normal;
+  text-align: center;
 }
 
 footer .social li a:hover {
