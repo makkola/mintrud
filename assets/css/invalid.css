@@ -1,0 +1,544 @@
+.invalid-menu {
+  height: 64px;
+  line-height: 64px;
+  background-color: #e8e8e8;
+  display: none;
+}
+
+.invalid-menu__default {
+  font-size: 24px;
+  text-decoration: underline;
+  color: #000;
+  float: right;
+}
+
+.invalid-menu__default a {
+  line-height: 1.25;
+}
+
+.invalid-menu__color,
+.invalid-menu__size {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.25;
+  font-size: 16px;
+}
+
+.invalid-menu__color a,
+.invalid-menu__size a {
+  text-decoration: underline;
+  background: 0 0;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  padding: 0 8px;
+  height: 34px;
+  line-height: 33px;
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+  margin-left: 5px;
+}
+
+.invalid-menu__size a.active {
+  background-color: #fff;
+  color: #000;
+}
+
+.invalid-menu__size .sm,
+html.sm {
+  font-size: 14px;
+}
+
+.invalid-menu__size .normal,
+html.lg {
+  font-size: 18px;
+}
+
+.invalid-menu__size .lg {
+  font-size: 22px;
+}
+
+.invalid-menu__color {
+  margin-left: 40px;
+}
+
+.invalid-menu__color .white,
+body.black-theme .datepicker table td.highlight,
+body.black-theme .datepicker table td.today,
+body.blue-theme .datepicker table td.highlight,
+body.blue-theme .datepicker table td.today {
+  background-color: #fff;
+  color: #000;
+}
+
+.invalid-menu__color .black {
+  background-color: #000;
+  color: #fff;
+}
+
+.invalid-menu__color .blue {
+  background-color: #063462;
+  color: #8bc3fd;
+}
+
+html .normal {
+  font-size: 16px;
+}
+
+body.black-theme a,
+body.blue-theme a,
+body.white-theme a {
+  color: #000;
+  text-decoration: underline;
+}
+
+body.black-theme .home__header .logo:before,
+body.black-theme img,
+body.blue-theme .home__header .logo:before,
+body.blue-theme img,
+body.white-theme .home__header .logo:before,
+body.white-theme .menu__boot .logo,
+body.white-theme img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+body.black-theme .invalid-menu,
+body.blue-theme .invalid-menu,
+body.white-theme .invalid-menu {
+  display: block;
+}
+
+body.black-theme .home__header:before,
+body.black-theme .info-list__item__title img,
+body.black-theme .menu__top .invalid,
+body.black-theme .video-list__item a:before,
+body.blue-theme .home__header:before,
+body.blue-theme .info-list__item__title img,
+body.blue-theme .menu__top .invalid,
+body.blue-theme .video-list__item a:before,
+body.white-theme .home__header:before,
+body.white-theme .info-list__item__title img,
+body.white-theme .menu__top .invalid,
+body.white-theme .video-list__item a:before {
+  display: none;
+}
+
+body.white-theme .datepicker {
+  background-color: transparent;
+  border: 0;
+}
+
+body.black-theme .datepicker,
+body.blue-theme .datepicker {
+  background-color: transparent;
+}
+
+body.black-theme .home__calendar__right #calendar:before,
+body.blue-theme .home__calendar__right #calendar:before,
+body.white-theme .home__calendar__right #calendar:before {
+  background-color: transparent;
+  border: 0;
+}
+
+body.black-theme .advice-page__head,
+body.black-theme .home__header,
+body.blue-theme .advice-page__head,
+body.blue-theme .home__header,
+body.white-theme .advice-page__head,
+body.white-theme .home__header {
+  background: 0 0;
+}
+
+body.black-theme .video-list__item__title,
+body.blue-theme .video-list__item__title,
+body.white-theme .video-list__item__title {
+  background: 0 0 !important;
+  position: static;
+  margin-bottom: 10px;
+}
+
+body.black-theme .calendar-page__group__item-desc .location:before,
+body.black-theme .calendar-page__group__item-desc .phone:before,
+body.black-theme .contacts-page__block .fax:before,
+body.black-theme .contacts-page__block .globe:before,
+body.black-theme .contacts-page__block .location:before,
+body.black-theme .contacts-page__block .mail:before,
+body.black-theme .contacts-page__block .phone:before,
+body.black-theme .contacts-page__block .user:before,
+body.black-theme .document-image,
+body.black-theme .green-button .image,
+body.black-theme .icon-calc,
+body.black-theme .icon-zoom,
+body.black-theme .list_icons .fax:before,
+body.black-theme .list_icons .globe:before,
+body.black-theme .list_icons .location:before,
+body.black-theme .list_icons .mail:before,
+body.black-theme .list_icons .phone:before,
+body.black-theme .list_icons .user:before,
+body.blue-theme .calendar-page__group__item-desc .location:before,
+body.blue-theme .calendar-page__group__item-desc .phone:before,
+body.blue-theme .contacts-page__block .fax:before,
+body.blue-theme .contacts-page__block .globe:before,
+body.blue-theme .contacts-page__block .location:before,
+body.blue-theme .contacts-page__block .mail:before,
+body.blue-theme .contacts-page__block .phone:before,
+body.blue-theme .contacts-page__block .user:before,
+body.blue-theme .document-image,
+body.blue-theme .green-button .image,
+body.blue-theme .icon-calc,
+body.blue-theme .icon-zoom,
+body.blue-theme .list_icons .fax:before,
+body.blue-theme .list_icons .globe:before,
+body.blue-theme .list_icons .location:before,
+body.blue-theme .list_icons .mail:before,
+body.blue-theme .list_icons .phone:before,
+body.blue-theme .list_icons .user:before,
+body.white-theme .calendar-page__group__item-desc .location:before,
+body.white-theme .calendar-page__group__item-desc .phone:before,
+body.white-theme .contacts-page__block .fax:before,
+body.white-theme .contacts-page__block .globe:before,
+body.white-theme .contacts-page__block .location:before,
+body.white-theme .contacts-page__block .mail:before,
+body.white-theme .contacts-page__block .phone:before,
+body.white-theme .contacts-page__block .user:before,
+body.white-theme .document-image,
+body.white-theme .green-button .image,
+body.white-theme .icon-calc,
+body.white-theme .icon-zoom,
+body.white-theme .list_icons .fax:before,
+body.white-theme .list_icons .globe:before,
+body.white-theme .list_icons .location:before,
+body.white-theme .list_icons .mail:before,
+body.white-theme .list_icons .phone:before,
+body.white-theme .list_icons .user:before {
+  display: none;
+}
+
+body.black-theme .calendar-page__group__item-desc .location,
+body.black-theme .calendar-page__group__item-desc .phone,
+body.black-theme .contacts-page__block .fax,
+body.black-theme .contacts-page__block .globe,
+body.black-theme .contacts-page__block .location,
+body.black-theme .contacts-page__block .mail,
+body.black-theme .contacts-page__block .phone,
+body.black-theme .contacts-page__block .user,
+body.black-theme .list_icons .fax,
+body.black-theme .list_icons .globe,
+body.black-theme .list_icons .location,
+body.black-theme .list_icons .mail,
+body.black-theme .list_icons .phone,
+body.black-theme .list_icons .user,
+body.blue-theme .calendar-page__group__item-desc .location,
+body.blue-theme .calendar-page__group__item-desc .phone,
+body.blue-theme .contacts-page__block .fax,
+body.blue-theme .contacts-page__block .globe,
+body.blue-theme .contacts-page__block .location,
+body.blue-theme .contacts-page__block .mail,
+body.blue-theme .contacts-page__block .phone,
+body.blue-theme .contacts-page__block .user,
+body.blue-theme .list_icons .fax,
+body.blue-theme .list_icons .globe,
+body.blue-theme .list_icons .location,
+body.blue-theme .list_icons .mail,
+body.blue-theme .list_icons .phone,
+body.blue-theme .list_icons .user,
+body.white-theme .calendar-page__group__item-desc .location,
+body.white-theme .calendar-page__group__item-desc .phone,
+body.white-theme .contacts-page__block .fax,
+body.white-theme .contacts-page__block .globe,
+body.white-theme .contacts-page__block .location,
+body.white-theme .contacts-page__block .mail,
+body.white-theme .contacts-page__block .phone,
+body.white-theme .contacts-page__block .user,
+body.white-theme .list_icons .fax,
+body.white-theme .list_icons .globe,
+body.white-theme .list_icons .location,
+body.white-theme .list_icons .mail,
+body.white-theme .list_icons .phone,
+body.white-theme .list_icons .user {
+  padding-left: 0;
+}
+
+body.black-theme .contacts-page img,
+body.blue-theme .contacts-page img,
+body.white-theme .contacts-page img {
+  -webkit-filter: grayscale(0) !important;
+  filter: grayscale(0) !important;
+}
+
+body.black-theme .calendar-page__group__item-desc .title a:hover,
+body.black-theme .menu__boot.second .wrap a.active,
+body.blue-theme .calendar-page__group__item-desc .title a:hover,
+body.blue-theme .menu__boot.second .wrap a.active {
+  border-color: #fff;
+}
+
+body.black-theme .menu__boot .logo,
+body.blue-theme .menu__boot .logo {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  background-image: url(../images/sprite.png);
+  background-position: 0 -106px;
+  width: 111px;
+  height: 44px;
+}
+
+body.black-theme .video-list__item__title,
+body.blue-theme .video-list__item__title,
+body.white-theme .menu__top a {
+  color: #fff;
+}
+
+body.black-theme .btn.red,
+body.black-theme .btn.white,
+body.black-theme .green-button,
+body.blue-theme .btn.red,
+body.blue-theme .btn.white,
+body.blue-theme .green-button {
+  border-color: #fff;
+}
+
+body.black-theme .document-link a:before,
+body.black-theme .document-link a:hover:before,
+body.blue-theme .document-link a:before,
+body.blue-theme .document-link a:hover:before {
+  background-image: url(../images/sprite.png);
+  background-position: -96px -348px;
+  width: 10px;
+  height: 10px;
+}
+
+body.black-theme .page__head__back:before,
+body.black-theme .page__head__back:hover:before,
+body.blue-theme .page__head__back:before,
+body.blue-theme .page__head__back:hover:before {
+  background-image: url(../images/sprite.png);
+  background-position: -257px -170px;
+  width: 26px;
+  height: 26px;
+}
+
+body.black-theme .page__head__share:after,
+body.black-theme .page__head__share:hover:after,
+body.blue-theme .page__head__share:after,
+body.blue-theme .page__head__share:hover:after {
+  background-image: url(../images/sprite.png);
+  background-position: -193px -246px;
+  width: 26px;
+  height: 26px;
+}
+
+body.black-theme .job__collapse__name:before,
+body.blue-theme .job__collapse__name:before {
+  background-image: url(../images/sprite.png);
+  background-position: -413px 0;
+  width: 8px;
+  height: 15px;
+}
+
+body.black-theme .calc-page__content .input,
+body.blue-theme .calc-page__content .input {
+  border: 1px solid #ccc;
+}
+
+body.black-theme .calc-page__buttons .icon,
+body.blue-theme .calc-page__buttons .icon {
+  border-color: #ccc;
+}
+
+body.black-theme .input,
+body.blue-theme .input {
+  border: 1px solid #ccc;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+body.black-theme .input input,
+body.blue-theme .input input {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+body.black-theme .calc-page__buttons .icon.plus:before,
+body.blue-theme .calc-page__buttons .icon.plus:before {
+  background-image: url(../images/sprite.png);
+  background-position: -336px -42px;
+  width: 21px;
+  height: 22px;
+}
+
+body.black-theme .calc-page__buttons .icon.refresh:before,
+body.blue-theme .calc-page__buttons .icon.refresh:before {
+  background-image: url(../images/sprite.png);
+  background-position: -239px -246px;
+  width: 24px;
+  height: 21px;
+}
+
+body.black-theme .page-carousel .slick-arrow,
+body.blue-theme .page-carousel .slick-arrow {
+  background: 0 0 !important;
+}
+
+body.black-theme .select2-container--custom2 .select2-selection__choice__remove,
+body.black-theme .select2-container--custom2 .select2-selection__clear,
+body.blue-theme .select2-container--custom2 .select2-selection__choice__remove,
+body.blue-theme .select2-container--custom2 .select2-selection__clear {
+  background-image: url(../images/sprite.png);
+  background-position: 0 -348px;
+  width: 13px;
+  height: 13px;
+}
+
+body.black-theme .home__button,
+body.blue-theme .home__button {
+  border-color: #fff;
+}
+
+body.black-theme .datepicker,
+body.blue-theme .datepicker {
+  border: 1px solid #fff;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+body.black-theme .datepicker .next span,
+body.blue-theme .datepicker .next span {
+  background-image: url(../images/sprite.png);
+  background-position: -156px -348px;
+  width: 10px;
+  height: 9px;
+}
+
+body.black-theme .datepicker .prev span,
+body.blue-theme .datepicker .prev span {
+  background-image: url(../images/sprite.png);
+  background-position: -245px -348px;
+  width: 9px;
+  height: 9px;
+}
+
+body.black-theme .calendar-page__datepicker .datepicker .next span,
+body.blue-theme .calendar-page__datepicker .datepicker .next span {
+  background-image: url(../images/sprite.png);
+  background-position: -377px -150px;
+  width: 15px;
+  height: 14px;
+}
+
+body.black-theme .calendar-page__datepicker .datepicker .prev span,
+body.blue-theme .calendar-page__datepicker .datepicker .prev span {
+  background-image: url(../images/sprite.png);
+  background-position: -377px -218px;
+  width: 15px;
+  height: 14px;
+}
+
+body.black-theme .more__toggle:before,
+body.blue-theme .more__toggle:before {
+  background-image: url(../images/sprite.png);
+  background-position: -157px -309px;
+  width: 20px;
+  height: 11px;
+}
+
+body.white-theme .footer,
+body.white-theme .page>div:not(.invalid-menu):not(.contacts-page) {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+body.white-theme .footer * {
+  color: white;
+}
+
+body.white-theme .btn {
+  color: white;
+  background: black
+}
+
+body.white-theme .calendar-page__datepicker .datepicker {
+  background-color: #fff;
+}
+
+body.white-theme .home__header .logo,
+body.white-theme .select2-container--custom .select2-selection__rendered,
+body.white-theme .video-list__item__title {
+  color: #000;
+}
+
+body.white-theme .select2-container--custom .select2-selection--single {
+  border-color: #000;
+}
+
+body.white-theme .select2-container--custom .select2-selection__arrow {
+  -webkit-filter: invert();
+  filter: invert();
+}
+
+body.black-theme,
+body.white-theme .select2-container--custom .select2-dropdown {
+  background: #000;
+}
+
+body.black-theme .footer,
+body.black-theme .footer *,
+body.black-theme .page>div:not(.invalid-menu):not(.contacts-page),
+body.black-theme .page>div:not(.invalid-menu):not(.contacts-page) * {
+  color: #fff;
+  background-color: #000;
+}
+
+body.black-theme .footer {
+  background: #000;
+}
+
+body.black-theme .footer:before,
+body.blue-theme .footer:before {
+  display: none;
+}
+
+body.black-theme .btn {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+body.blue-theme {
+  background: #063462;
+}
+
+body.blue-theme .footer,
+body.blue-theme .footer *,
+body.blue-theme .page>div:not(.invalid-menu):not(.contacts-page),
+body.blue-theme .page>div:not(.invalid-menu):not(.contacts-page) * {
+  color: #fff;
+  background-color: #063462;
+}
+
+body.blue-theme .footer {
+  background: #063462;
+}
+
+body.blue-theme .btn {
+  background-color: #fff !important;
+  color: #063462 !important;
+}
+
+.white-theme .menu__top a {
+  color: black !important;
+}
+
+.black-theme .branding-rf {
+  filter: brightness(100);
+}
+
+body.blue-theme div.page div.branding div.branding-rf img,
+body.blue-theme div.page div.branding div.branding-rt img {
+  background: none !important;
+  filter: brightness(10) grayscale(1);
+}
